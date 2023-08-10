@@ -1,0 +1,150 @@
+:root {
+  --cyan: hsl(179, 63%, 43%);
+
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--light-gray);
+  font-style: normal;
+  font-weight: 400;
+  padding: 72px 32px;
+}
+.card {
+  padding: 24px;
+}
+.card__1 {
+  background-color: #fff;
+  padding: 28px 24px 32px;
+}
+
+.card__1-title {
+  color: var(--cyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  margin-bottom: 24px;
+}
+.card__1-subtitle {
+  color: var(--bright-yellow);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: -0.187px;
+  margin-bottom: 16px;
+}
+.card__1-text {
+  color: var(--grayish-blue);
+  font-size: 0.875rem;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: -0.175px;
+}
+.card__2 {
+  background: hsl(179, 62%, 43%);
+}
+
+.card__2-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.225px;
+  margin-block: 18px;
+}
+.card__2-price-box {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 5px;
+}
+
+.card__2-price {
+  color: #fff;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.4px;
+}
+.card__2-per-month {
+  color: #fff;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+
+.card__2-text {
+  color: #fff;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.2px;
+  margin-bottom: 26px;
+}
+
+.card__2-cta {
+  border-radius: 5px;
+  background: #c0df33;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+.card__3 {
+  background-color: var(--cyan);
+  position: relative;
+}
+.card__3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  opacity: 15.69%;
+}
+.card__3-title {
+  color: #fff;
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.225px;
+  margin-bottom: 18px;
+}
+.card__3-text {
+  color: #fff;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.175px;
+  opacity: 0.75;
+}
